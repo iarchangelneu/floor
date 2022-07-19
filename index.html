@@ -5,14 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documents</title>
+    <link rel="stylesheet" href="./style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <section class="pre-header">
-        <div class="container-fluid">
-            
+    <section class="preHeader">
+        <div class="container-fluid cont__pd">
+            <div class="preHeader__container d-flex flex justify-content-end align-items-center">
+                <a href="" class="preHeader__orderLink">
+                    <img src="./img/header-cart.svg" alt="header-cart">
+                    Заказать в фирменном интернет-магазине
+                </a>
+                <button class="preHeader__close">
+                    <img src="./img/header-close.svg" alt="close">
+                </button>
+            </div>
         </div>
     </section>
+
+    <header id="header">
+        <div class="container-fluid header__container cont__pd">
+            <div class="header__logo">
+                ХВОЙНАЯ<br>
+                ПОДЛОЖКА   
+            </div>
+            <div class="header__navs">
+                <a href="">ПРЕИМУЩЕСТВА</a>
+                <a href="">ХАРАКТЕРИСТИКИ</a>  
+                <a href="">ОТЗЫВЫ</a>  
+                <a href="">ВИДЕО</a>   
+                <button class="header__btn">
+                    Оставить отзыв    
+                </button>   
+                <a class="header__phoneLink" href="">
+                    <img src="./img/header-phone.svg" alt="">
+                    +7 (495) 380-10-62
+                </a>
+            </div>    
+        </div>    
+    </header>
+
+    <section class="hero">
+        <div>
+            <img class="hero__img" src="./img/hero-img.png" alt="">
+            <div class="hero__textBlock">
+                <div class="hero__titleTop">
+                    Новый дизайн и упаковка!
+                </div> 
+                <div class="hero__titleBot">
+                    Больше преимуществ!    
+                </div>   
+                <div class="hero__text">
+                    Хвойная подложка под ламинат, паркетную и инженерную доску, а также для поднятия уровня пола без использования сухой или “мокрой” стяжки. Дополнительная тепло- и звукоизоляция.
+                </div>
+                <div class="hero__btns">
+                    <button class="hero__btn__advantages">
+                        Преимущества   
+                    </button>
+                    <button class="hero__btn__review">
+                        Оставить отзыв
+                    </button>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container-fluid">
+            <div class="advantages__title">
+                Преимущества    
+            </div>
+            <div class="row advantages__row">
+                <div class="col-lg-3">
+                    <div class="advantages__card">
+                        <img src="./img/advantages1.png" alt="" class="advantages__img">
+                        <p class="advantages__text">
+                            Отличная звукоизоляция воздушных и ударных шумов до 70-75% (для подложки 10 мм).     
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="advantages__card">
+                        <img src="./img/advantages2.png" alt="" class="advantages__img">
+                        <p class="advantages__text">
+                            Гарантия от производителя - 5 лет, при правильном монтаже и применении материала.     
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="advantages__card">
+                        <img src="./img/advantages3.png" alt="" class="advantages__img">
+                        <p class="advantages__text">
+                            100% экологический строительный материал, производимый из древесного волокна.   
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="advantages__card">
+                        <img src="./img/advantages4.png" alt="" class="advantages__img">
+                        <p class="advantages__text">
+                            Подложка устраняет значительные неровности пола от 3 до 7 мм (для подложки толщиной 10 мм).   
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+    <script src="./js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

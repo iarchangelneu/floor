@@ -1,0 +1,234 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font */
+
+:root {
+    --monts: 'Montserrat', sans-serif;
+    --inter: 'Inter', sans-serif;
+}
+
+.cont__pd{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+
+/* preHeader */
+.preHeader{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: #334E44;
+}
+
+.preHeader__container{
+   
+}
+
+.preHeader__orderLink{
+    font-weight: 300;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.preHeader__orderLink:hover{
+    color: white;
+}
+
+.preHeader__orderLink img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.preHeader__close{
+    background: none;
+    border: unset;
+    margin-left: 30px;
+    display: flex;
+}
+.preHeader__close img{
+    width: 10px;
+    height: 10px;
+}
+/* preHeader */
+
+/* HEADER */
+header{
+    transition: all 0.1s;
+    position: fixed;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+.header__logo{
+    font-weight: 800;
+    font-size: 20px;
+    color: #01A66B;
+    line-height: 110%;
+}
+.header__navs{
+    display: flex;
+    align-items: center;
+}
+
+.header__navs a{
+    color: #212121;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+.header__navs a:hover{
+    color: #212121;
+}
+
+.header__btn{
+    font-weight: 700;
+    font-size: 11px;   
+    color: rgba(1, 166, 107, 1); 
+    border: none;
+    background: rgba(187, 238, 220, 0.5);
+    border-radius: 4px;
+    height: 32px;
+}
+
+.header__navs .header__phoneLink{
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.navShadow{
+    top: 0;
+}
+/* HEADER */
+
+/* HERO */
+.hero{
+    background: linear-gradient(287.15deg, #C9FFEC 0%, #A2E8CF 0.01%, #DBFFF2 100%);
+}
+.hero__img{
+    width: 100%;
+    height: 950px;
+}
+
+.hero__img__box{
+    width: 26.11vw;
+    position: absolute;
+}
+.hero__textBlock{
+    position: absolute;
+    top: 270px;
+    left: 160px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.hero__titleTop{
+    font-weight: 600;
+    font-size: 28px;
+    color: #212121;
+}
+.hero__titleBot{
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 52px;
+    color: #01A66B;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+}
+.hero__text{
+    margin-top: 38px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #424242;
+    width: 540px;
+}
+
+.hero__btns{
+    margin-top: 25px;
+}
+
+.hero__btn__advantages{
+    background: #01A66B;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    height: 42px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.hero__btn__review{
+    margin-left: 10px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #01A66B;
+    letter-spacing: 0.25px;
+    height: 42px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+    .hero__img{
+        width: 100%;
+        height: unset;
+    } 
+}
+/* HERO */
+
+
+/* advantages */
+.advantages{
+    margin-top: 160px;
+    padding-bottom: 120px;
+}
+.advantages__title{
+    font-family: var(--monts);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #01A66B;
+}
+.advantages__row{
+    margin-top: 90px !important;
+}
+.advantages__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages__img{
+    width: 170px;
+}
+.advantages__text{
+    width: 245px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    color: #212121;
+    font-family: var(--inter);
+    margin-top: 50px;
+}
+/* advantages */
