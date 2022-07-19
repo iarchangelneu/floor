@@ -8,7 +8,8 @@
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/vstyle.css"
+    <link rel="stylesheet" href="./style/vstyle.css">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
   </head>
   <body>
         <!-- Collection Block -->
@@ -26,7 +27,110 @@
         </div>
 
     <!-- Collection Block -->
-    
+
+    <!-- Baby Block -->
+
+        <div class="container-fluid baby">
+            <div class="baby__block">
+                <div class="baby__img__block">
+                    <img src="./img/baby.png" class="baby__img" alt="">
+                </div>
+                <div class="">
+                    <div class="baby__text mt-5">
+                         <p class="baby__main pt-4">
+                        Подходит для<br> спальни и детской
+                             </p>
+                        <p class="baby__sec mt-4">
+                        Хвойная подложка снижает воздушные шумы и поглощает<br>
+                         ударные шумы, а также является дополнительным<br>
+                          теплоизоляционным слоем. Поэтому, ее рекомендуется<br>
+                           использовать в спальнях и детских комнатах.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Baby Block -->
+
+    <!-- FloorTypes Block  -->
+
+
+        <div class="container-fluid floor mt-5">
+            <div class="text-center pt-4">
+                <h1 class="floorT__main">Подходит для различных<br>
+                    типов напольных покрытий </h1>
+            </div>
+            <img src="./img/next.png" onclick="next()" class="next__btn" alt="">
+            <img src="./img//prev.png" onclick="prev()" class="prev__btn" alt="">
+            <div class="floorT__cards">
+                <div>
+                    <div class="floorT__block">
+                    <img src="./img/card1.png" class="floor__card__img" alt="">
+                    <div class="floorT__content">
+                        <ul>
+                            <li> <span>Выравнивание неровностей пола до 3 мм</span></li>
+                            <li><span>Снижение воздушных и ударных шумов<br>
+                            до 70%.</span></li>
+                        </ul>
+                    <hr style="color: #01A66B;">
+                        <div class="floorT__for">
+                            <p>Для каких материалов подходит:</p>
+                            <div style="display: flex; flex-direction:column;">
+                                <span>Ламинат</span>
+                                <span>Паркетная доска</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="floorT__block floorT__block-p">
+                    <img src="./img/card2.png" class="floor__card__img" alt="">
+                    <div class="floorT__content">
+                        <ul>
+                            <li> <span>Выравнивание неровностей пола до 3 мм</span></li>
+                            <li><span>Снижение воздушных и ударных шумов<br>
+                            до 70%.</span></li>
+                        </ul>
+                    <hr style="color: #01A66B;">
+                        <div class="floorT__for">
+                            <p>Для каких материалов подходит:</p>
+                            <div style="display: flex; flex-direction:column;">
+                                <span>Паркетная доска</span>
+                                <span>Ламинат класса 33 и выше</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="floorT__block">
+                    <img src="./img/card3.png" class="floor__card__img" alt="">
+                    <div class="floorT__content">
+                        <ul>
+                            <li> <span>Выравнивание неровностей пола до 3 мм</span></li>
+                            <li><span>Снижение воздушных и ударных шумов<br>
+                            до 70%.</span></li>
+                        </ul>
+                    <hr style="color: #01A66B;">
+                        <div class="floorT__for">
+                            <p>Для каких материалов подходит:</p>
+                            <div style="display: flex; flex-direction:column;">
+                                <span>Паркетная доска</span>
+                                <span>Инженерная доска </span>
+                                <span>Ламинат</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+     <!-- FloorTypes Block  -->
+
+        
 
 
 
@@ -38,11 +142,14 @@
 
 
 
-
-
-
-
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>    
+    <script src="./js/slider.js"></script>
+</body>
+
 </html>
