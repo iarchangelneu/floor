@@ -130,7 +130,105 @@
 
      <!-- FloorTypes Block  -->
 
+        <!-- characteristics block -->
         
+        <div class="container-fluid mt-5">
+            <div class="text-center">
+                <h1 class="floorT__main">Характеристики</h1>
+            </div>
+            <div class="chars__buttons text-center mt-5">
+                <button data-tab="1" class="tab__btn chars__coll active">Коллекция подложки 2022 года</button>
+                <button data-tab="2" class="tab__btn chars__btn">Более ранние материалы</button>
+            </div>
+            <div class="chars__content">
+                <hr>
+                <table data-tab-content="1" class="table table-hover table-borderless chars__block active__block">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">Размеры плиты</td>
+                        <td>790 х 590 х 5 мм</td>
+                        <td>790 х 590 х 7 мм</td>
+                        <td>@790 х 590 х 10 мм</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Теплопроводность</td>
+                        <td>0,05 Вт/m*K</td>
+                        <td>0,05 Вт/m*K</td>
+                        <td>@0,05 Вт/m*K</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Тепловое сопротивление</td>
+                        <td>0,1 м2*К/Вт</td>
+                        <td>0,1 м2*К/Вт</td>
+                        <td>0,1 м2*К/Вт</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table data-tab-content="2" class="table table-hover table-borderless chars__block">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">Размеры плиты</td>
+                        <td>780 х 590 х 5 мм</td>
+                        <td>780 х 590 х 7 мм</td>
+                        <td>@790 х 590 х 10 мм</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Теплопроводность</td>
+                        <td>0,05 Вт/m*K</td>
+                        <td>0,05 Вт/m*K</td>
+                        <td>@0,05 Вт/m*K</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Тепловое сопротивление</td>
+                        <td>0,1 м2*К/Вт</td>
+                        <td>0,1 м2*К/Вт</td>
+                        <td>0,1 м2*К/Вт</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        <!-- characteristics block -->
+
+        <!-- video block  -->
+
+        <div class="container-fluid mt-5">
+            <div class="text-center">
+                <h1 class="floorT__main">Видео</h1>
+            </div>
+            <div class="chars__buttons text-center mt-5">
+                <button data-tab-video="1" class="video__btn chars__coll active">Коллекция подложки 2022 года</button>
+                <button data-tab-video="2" class="video__btn chars__btn">Более ранние материалы</button>
+            </div>
+            <div class="chars__content d-flex justify-content-center">
+                <div class="video__block video__active" data-video="1">
+                    
+                    <iframe width="1110" height="500" class="video__frame" src="https://www.youtube.com/embed/3jT_q7dt-cM" frameborder="0" allowfullscreen ></iframe>
+                </div>
+                <div class="video__block" data-video="2">
+                    <iframe width="1110" height="500" class="video__frame" src="https://www.youtube.com/embed/3jT_q7dt-cM" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- video block  -->
 
 
 
@@ -150,6 +248,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/slick/slick.min.js"></script>    
     <script src="./js/slider.js"></script>
+    <script src="./js/chars.js"></script>
 </body>
 
 </html>
