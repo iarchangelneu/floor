@@ -1,4 +1,4 @@
-var mediaQuery = window.matchMedia('(max-width: 414px)');
+var mediaQuery = window.matchMedia('(max-width: 425px)');
 var card = document.querySelectorAll('.floorT__block')
 
 function next() {
