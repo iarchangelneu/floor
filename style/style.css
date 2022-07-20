@@ -176,8 +176,17 @@ header{
     }
 }
 
+@media screen and (max-width: 350px) {
+   .preHeader__orderLink{
+    font-size: 10px;
+   }
+}
+
 @media screen and (min-width: 481px) {
     .header__img{
+        display: none;
+    }
+    .headerMobile{
         display: none;
     }
 }
@@ -590,6 +599,12 @@ header{
         font-size: 21px;
     } 
 }
+@media screen and (max-width: 350px) {
+    .advantages__text{
+        width: 150px;
+        margin-top: 20px;
+    }
+ }
 /* advantages */
 
 
@@ -862,4 +877,13 @@ header{
         font-family: var(--inter);
     }
 }
+
+@media screen and (max-width: 350px) {
+   .reviews__block{
+        width: 280px;
+    }
+    .reviews__text{
+        font-size: 12px;
+    }
+ }
 /* REVIEWS */
