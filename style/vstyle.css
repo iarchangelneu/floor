@@ -515,6 +515,22 @@ ul li span {
         padding: 50px 10px;
     }
 
+    .next__btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 200px;
+        z-index: 1;
+    }
+
+    .prev__btn {
+        display: block;
+        position: absolute;
+        left: 10px;
+        bottom: 200px;
+        z-index: 1;
+    }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -589,22 +605,6 @@ ul li span {
 
     .floorT__main {
         font-size: 18px;
-    }
-
-    .next__btn {
-        display: block;
-        position: absolute;
-        right: 10px;
-        bottom: 200px;
-        z-index: 1;
-    }
-
-    .prev__btn {
-        display: block;
-        position: absolute;
-        left: 10px;
-        bottom: 200px;
-        z-index: 1;
     }
 
     .chars__content {
