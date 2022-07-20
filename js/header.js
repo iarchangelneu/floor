@@ -12,6 +12,9 @@ function onScrollheader() {
         hd.style.backgroundColor = "#FFFFFF"
         hd.classList.add("navShadow")
     } else {
+        if(window.innerWidth>480){
+          hd.style.backgroundColor = "rgba(0,0,0,0)"
+        }
         hd.classList.remove("navShadow")
     }
 }
@@ -20,7 +23,7 @@ function onScrollheader() {
 // REVIEWS
 $(document).ready(function(){
     $('.reviews__slider').slick({
-        centerPadding: '600px',
+        centerPadding: '650px',
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -43,23 +46,86 @@ $(document).ready(function(){
           }
           ,
           {
-            breakpoint: 760,
+            breakpoint: 1400,
             settings: {
-                
+              centerPadding: '410px', 
+            }
+          }
+          ,
+          {
+            breakpoint: 1300,
+            settings: {
+              centerPadding: '400px', 
+            }
+          }
+          ,
+          {
+            breakpoint: 1210,
+            settings: {
+              centerPadding: '300px', 
+            }
+          }
+          ,
+          {
+            breakpoint: 1025,
+            settings: {
+              centerPadding: '200px',  
             }
           },
           {
-              breakpoint: 600,
-              settings: {
-                  
-              }
+            breakpoint: 800,
+            settings: {
+              centerPadding: '150px',  
+            }
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              centerPadding: '0px',
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+            }
           }
         ]
     });
 
     $('.reviews__slider').slick('slickGoTo', 1);
   });
-
- 
-
 // REVIEWS
+
+// HEADER MOBILE
+function openHeader() {
+  let sc = $("#headerMobile")[0]
+  sc.style.transition = "all 0.8s";
+  sc.style.display = "block"
+  // sc.style.left = sc.offsetHeight * -1 - 1000 + 'px'
+  sc.style.right = 0;
+  sc.style.top = 0;
+  // setTimeout(openCatalogST, 50)
+}
+
+function closeHeader() {
+  let sc = $("#headerMobile")[0]
+  sc.style.transition = "all 0.8s";
+  sc.style.right = -101 + 'vw'
+}
+
+// HEADER MOBILE
+
+//ANKOR
+const anchors = document.querySelectorAll('.scroll-to')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href')
+    
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+//ANKOR
