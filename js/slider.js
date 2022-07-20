@@ -12,7 +12,6 @@ if (mediaQuery.matches) {
         $('.floorT__cards').slick({
             arrows: false,
             centerMode: true,
-            // centerPadding: '97px',
             slidesToShow: 1,
             variableWidth: true,
             responsive: [
@@ -20,8 +19,8 @@ if (mediaQuery.matches) {
             ]
         });
         for (let i = 0; i < card.length; i++) {
-            if (card[i].classList.contains('floorT__block-p')) {
-                card[i].classList.remove('floorT__block-p')
+            if (card[i].classList.contains('floorT__block-p')) { // Проверка всех элементов на наличие класса с маргинами
+                card[i].classList.remove('floorT__block-p')  // Удаление класса с маргинами.
             }
 
         }
