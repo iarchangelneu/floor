@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
+<body id="body">
     <section class="preHeader">
         <div class="container-fluid cont__pd">
             <div class="preHeader__container d-flex flex justify-content-end align-items-center">
@@ -27,29 +27,57 @@
 
     <header id="header">
         <div class="container-fluid header__container cont__pd">
-            <div class="header__logo">
+            <div class="header__logo scroll-to" href="#body">
                 ХВОЙНАЯ<br>
                 ПОДЛОЖКА   
             </div>
             <div class="header__navs">
-                <a href="">ПРЕИМУЩЕСТВА</a>
-                <a href="">ХАРАКТЕРИСТИКИ</a>  
-                <a href="">ОТЗЫВЫ</a>  
-                <a href="">ВИДЕО</a>   
+                <a href="#advantages">ПРЕИМУЩЕСТВА</a>
+                <a href="#characteristics">ХАРАКТЕРИСТИКИ</a>  
+                <a href="#reviews">ОТЗЫВЫ</a>  
+                <a href="#video">ВИДЕО</a>   
                 <button class="header__btn">
                     Оставить отзыв    
                 </button>   
-                <a class="header__phoneLink" href="">
+                <a class="header__phoneLink" href="tel:+74953801062">
                     <img src="./img/header-phone.svg" alt="">
                     +7 (495) 380-10-62
                 </a>
+                <img src="./img/header-bureger-img.svg" alt="" class="header__img" onclick="openHeader()">
             </div>    
         </div>    
     </header>
 
+    <div class="headerMobile" id="headerMobile">
+        <div class="headerM_container">
+            <div class="headerM__top">
+                <div class="header__logo">
+                    ХВОЙНАЯ<br>
+                    ПОДЛОЖКА   
+                </div>
+                <button class="btn__close" onclick="closeHeader()"><img
+                        src="./img/headerMClose.svg"></button>
+            </div>
+            <div class="headerM__navs">
+                <div class="nav__links">
+                    <a href="#advantages" class="menu-item nav__link" onclick="closeHeader()"><span>Преимущества</span></a>
+                    <a href="#characteristics" class="menu-item nav__link" onclick="closeHeader()"><span>Характеристики</span></a>
+                    <a href="#reviews" class="menu-item nav__link" onclick="closeHeader()"><span>Отзывы</span></a>
+                    <a href="#video" class="menu-item nav__link" onclick="closeHeader()"><span>Видео</span></a>
+                </div>    
+                <a class="header__phoneLink headerM__phone" href="tel:+74953801062">
+                    <img src="./img/header-phone.svg" alt="">
+                    +7 (495) 380-10-62
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
     <section class="hero">
         <div>
             <img class="hero__img" src="./img/hero-img-last.png" alt="">
+            <img class="hero__img__m" src="./img/hero-img-ms.png" alt="">
             <div class="hero__textBlock">
                 <div class="hero__titleTop">
                     Новый дизайн и упаковка!
@@ -61,7 +89,7 @@
                     Хвойная подложка под ламинат, паркетную и инженерную доску, а также для поднятия уровня пола без использования сухой или “мокрой” стяжки. Дополнительная тепло- и звукоизоляция.
                 </div>
                 <div class="hero__btns">
-                    <button class="hero__btn__advantages">
+                    <button class="hero__btn__advantages scroll-to" href="#advantages">
                         Преимущества   
                     </button>
                     <button class="hero__btn__review">
@@ -82,19 +110,19 @@
                 Узнайте, какие преимущества появились<br>
                     у новой коллекции хвойной подложки под напольные покрытия.
             </p>
-            <button class="collection__btn mt-4">Преимущества</button>
+            <button class="collection__btn mt-4 scroll-to" href="#advantages" >Преимущества</button>
         </div>
     </div>
 
     <!-- Collection Block -->
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container-fluid">
             <div class="advantages__title">
                 Преимущества    
             </div>
-            <div class="row advantages__row">
-                <div class="col-lg-3">
+            <div class="row advantages__row mt-5">
+                <div class="col-6 col-lg-3">
                     <div class="advantages__card">
                         <img src="./img/advantages1.png" alt="" class="advantages__img">
                         <p class="advantages__text">
@@ -102,7 +130,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="advantages__card">
                         <img src="./img/advantages2.png" alt="" class="advantages__img">
                         <p class="advantages__text">
@@ -110,7 +138,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="advantages__card">
                         <img src="./img/advantages3.png" alt="" class="advantages__img">
                         <p class="advantages__text">
@@ -118,7 +146,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="advantages__card">
                         <img src="./img/advantages4.png" alt="" class="advantages__img">
                         <p class="advantages__text">
@@ -158,7 +186,7 @@
     <section class="structure">
         <div class="container-fluid structure__cont__pd">
             <div class="row">
-                <div class="col-6 structure__textContainer">
+                <div class="col-12 col-md-6 structure__textContainer">
                     <div class="structure__textBlock">
                         <div class="structure__textBlock__title">
                             <img src="./img//structure-done.svg" alt="">
@@ -193,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6" style="text-align: center;">
+                <div class="col-12 col-md-6 structure__imgCont" style="text-align: center;">
                     <img class="structure__img" src="./img/structure-img.png" alt="">
                 </div>
             </div>
@@ -279,10 +307,10 @@
 
     <div class="container-fluid baby">
         <div class="row level__block">
-            <div class="level__img__block col-6">
+            <div class="level__img__block col-md-6 col-12">
                 <img src="./img/level-img.png" class="baby__img" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <div class="baby__text">
                      <p class="baby__main pt-4">
                         И для поднятия<br> уровня пола
@@ -297,7 +325,7 @@
 
     <!-- characteristics block -->
         
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" id="characteristics">
         <div class="text-center">
             <h1 class="floorT__main">Характеристики</h1>
         </div>
@@ -372,12 +400,12 @@
 
     <!-- characteristics block -->
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container-fluid">
             <div class="advantages__title">
                 Отзывы    
             </div>
-            <div class="reviews__slider" id="reviews__slider">
+            <div class="reviews__slider mt-5" id="reviews__slider">
                 <div>
                     <div class="reviews__block">
                         <div class="reviews__name">
@@ -408,26 +436,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div>
-                    <div class="reviews__block">
-                        <div class="reviews__name">
-                            Александр
-                        </div>
-                        <div class="reviews__text">
-                            Переехал в новую квартиру, начали делать ремонт. Все старое выкинули, делать стали с нуля. Пол представлял собой печальное зрелище – никто никогда его не ровнял. Я долго думал, как исправить ситуацию не заливая полы (дорого), нашел хвойную подложку 5 мм. Где то прижалась, где то примялась, в общем, легла хорошо. В 1 месте при переходе из коридора в кухню был слишком большой перепад – пришлось мудрить, но в остальном без проблем.
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="reviews__block">
-                        <div class="reviews__name">
-                            Александр
-                        </div>
-                        <div class="reviews__text">
-                            Переехал в новую квартиру, начали делать ремонт. Все старое выкинули, делать стали с нуля. Пол представлял собой печальное зрелище – никто никогда его не ровнял. Я долго думал, как исправить ситуацию не заливая полы (дорого), нашел хвойную подложку 5 мм. Где то прижалась, где то примялась, в общем, легла хорошо. В 1 месте при переходе из коридора в кухню был слишком большой перепад – пришлось мудрить, но в остальном без проблем.
-                        </div>
-                    </div>
-                </div> -->
             </div>
 
             <div class="review__buttonCont">
@@ -440,7 +448,7 @@
 
      <!-- video block  -->
 
-     <div class="container-fluid video">
+     <div class="container-fluid video" id="video">
         <div class="text-center pt-5">
             <h1 class="floorT__main">Видео</h1>
         </div>
