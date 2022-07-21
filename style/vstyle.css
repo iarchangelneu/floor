@@ -195,6 +195,11 @@ ul li span {
     font-weight: 400;
 }
 
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: transparent !important;
+    color: #000 !important;
+}
+
 /* VIDEO */
 
 .video__block {
@@ -219,7 +224,7 @@ ul li span {
 .footer__conditional {
     font-family: var(--inter);
     font-weight: 300;
-    font-size: 12px;
+    font-size: 11px;
     color: #999999;
     display: flex;
     justify-content: space-between;
@@ -236,7 +241,7 @@ ul li span {
     font-family: var(--inter);
     font-weight: 300;
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -412,7 +417,7 @@ ul li span {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
 
     .collection__new {
         font-size: 16px;
