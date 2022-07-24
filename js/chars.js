@@ -21,25 +21,25 @@ for (var i = 0; i < clBtn.length; i++) {
     });
 }
 
-let vBtn = document.querySelectorAll('.video__btn')
-var tabVideo = document.querySelectorAll(".video__block");
+// let vBtn = document.querySelectorAll('.video__btn')
+// var tabVideo = document.querySelectorAll(".video__block");
 
-for (var idx = 0; idx < vBtn.length; idx++) {
+// for (var idx = 0; idx < vBtn.length; idx++) {
 
-    vBtn[idx].addEventListener("click", function (e) {
-        e.preventDefault();
-        var activeTabAttr = e.target.getAttribute("data-tab-video");
+//     vBtn[idx].addEventListener("click", function (e) {
+//         e.preventDefault();
+//         var activeTabAttr = e.target.getAttribute("data-tab-video");
 
-        for (var jdx = 0; jdx < vBtn.length; jdx++) {
-            var contentAttr = tabVideo[jdx].getAttribute("data-video");
+//         for (var jdx = 0; jdx < vBtn.length; jdx++) {
+//             var contentAttr = tabVideo[jdx].getAttribute("data-video");
 
-            if (activeTabAttr === contentAttr) {
-                vBtn[jdx].classList.add("active");
-                tabVideo[jdx].classList.add("video__active");
-            } else {
-                vBtn[jdx].classList.remove("active");
-                tabVideo[jdx].classList.remove("video__active");
-            }
-        };
-    });
-}
+//             if (activeTabAttr === contentAttr) {
+//                 vBtn[jdx].classList.add("active");
+//                 tabVideo[jdx].classList.add("video__active");
+//             } else {
+//                 vBtn[jdx].classList.remove("active");
+//                 tabVideo[jdx].classList.remove("video__active");
+//             }
+//         };
+//     });
+// }

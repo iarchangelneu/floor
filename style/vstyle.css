@@ -180,7 +180,7 @@ ul li span {
 }
 
 .chars__content {
-    padding: 54px 165px;
+    padding: 54px 0;
 }
 
 .table-hover>tbody>tr:hover>* {
@@ -202,9 +202,9 @@ ul li span {
 
 /* VIDEO */
 
-.video__block {
+/* .video__block {
     display: none;
-}
+} */
 
 .video__active {
     display: block;
@@ -242,6 +242,12 @@ ul li span {
     font-weight: 300;
     color: #999999;
     font-size: 12px;
+}
+
+.video__frame {
+    margin-right: 50px;
+    margin-left: 25px;
+    border-radius: 10px;
 }
 
 
