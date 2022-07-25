@@ -492,7 +492,11 @@ ul li span {
     }
 
     .table tr td {
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    .table tr th {
+        font-size: 11px;
     }
 
     .video__frame {
