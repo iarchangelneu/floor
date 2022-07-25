@@ -129,3 +129,7 @@ for (let anchor of anchors) {
   })
 }
 //ANKOR
+
+function hideCookie(){
+  document.getElementById('cookie').style.display = 'none'
+}
