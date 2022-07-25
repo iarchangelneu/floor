@@ -30,6 +30,7 @@ $(document).ready(function(){
         centerMode: true,
         dots: true,
         arrows: false,
+        adaptiveHeigh: true,
         dotsClass: 'review-dots',
         responsive: [
             {

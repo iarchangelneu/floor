@@ -484,6 +484,7 @@ ul li span {
 
     .chars__content {
         padding: 54px 30px;
+        overflow: scroll;
     }
 
     .chars__coll {
@@ -501,7 +502,13 @@ ul li span {
 
     .video__frame {
         width: 375px;
+        height: 205px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    /* .video__block .slick-slide{
+        
+    } */
 
     .footer__company {
         flex-direction: column;
@@ -585,6 +592,8 @@ ul li span {
 
     .video__frame {
         width: 350px;
+        height: 190px;
+        /* width: 100%; */
     }
 
     .footer__cond__sec {

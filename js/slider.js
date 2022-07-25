@@ -1,14 +1,7 @@
-var mediaQuery = window.matchMedia('(max-width: 425px)');
-var card = document.querySelectorAll('.floorT__block')
-
-function next() {
-    $('.floorT__cards').slick('slickNext');
-}
-function prev() {
-    $('.floorT__cards').slick('slickPrev');
-}
-if (mediaQuery.matches) {
-    window.onload = function () {
+window.onload = function () {
+    var mediaQuery = window.matchMedia('(max-width: 425px)');
+    var card = document.querySelectorAll('.floorT__block')
+    if (mediaQuery.matches) {
         $('.floorT__cards').slick({
             arrows: false,
             centerMode: true,
@@ -24,10 +17,19 @@ if (mediaQuery.matches) {
             }
 
         }
-
-
     }
 }
+
+
+
+function next() {
+    $('.floorT__cards').slick('slickNext');
+}
+function prev() {
+    $('.floorT__cards').slick('slickPrev');
+}
+
+
 $(document).ready(function () {
     $('.video__slider').slick({
         // centerPadding: '900px',
@@ -38,6 +40,7 @@ $(document).ready(function () {
         arrows: false,
         variableWidth: true,
         dotsClass: 'review-dots',
+        touchMove: true,
         // responsive: [
         //     {
         //         breakpoint: 1700,
