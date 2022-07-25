@@ -134,3 +134,8 @@ for (let anchor of anchors) {
 function hideCookie(){
   document.getElementById('cookie').style.display = 'none'
 }
+
+function closePreHeader(){
+  document.querySelector('.preHeader').style.display = 'none'
+  document.querySelector('#header').style.top = '0px'
+}
