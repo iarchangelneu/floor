@@ -77,6 +77,7 @@ body {
     line-height: 140%;
 }
 
+
 /* FLOOR  TYPES */
 
 .floorT__main {
@@ -604,7 +605,11 @@ ul li span {
         font-size: 11px;
     }
 }
-
+@media screen and (max-width: 370px) {
+    .baby__img{
+        width: 230px;
+    }
+}
 @media screen and (max-width: 320px) {
     .collection__new {
         font-size: 12px;

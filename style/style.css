@@ -95,6 +95,22 @@ header{
     line-height: 110%;
     font-family: var(--monts);
 }
+.header__logo a{
+    font-weight: 800;
+    font-size: 20px;
+    color: #01A66B;
+    line-height: 110%;
+    font-family: var(--monts);
+    text-decoration: none;
+}
+.header__logo a:hover{
+    font-weight: 800;
+    font-size: 20px;
+    color: #01A66B;
+    line-height: 110%;
+    font-family: var(--monts);
+    text-decoration: none;
+}
 .header__navs{
     display: flex;
     align-items: center;
@@ -146,6 +162,20 @@ header{
         color: #01A66B;
         line-height: 110%;
     }
+    .header__logo a{
+        font-weight: 800;
+        font-size: 14px;
+        color: #01A66B;
+        line-height: 110%;
+        text-decoration: none;
+    }
+    .header__logo a:hover{
+        font-weight: 800;
+        font-size: 14px;
+        color: #01A66B;
+        line-height: 110%;
+        text-decoration: none;
+    }
     .header__navs a{
         color: #212121;
         font-weight: 600;
@@ -168,6 +198,20 @@ header{
         color: #01A66B;
         line-height: 110%;
     }
+    .header__logo a{
+        font-weight: 800;
+        font-size: 14px;
+        color: #01A66B;
+        line-height: 110%;
+        text-decoration: none;
+    }
+    .header__logo a:hover{
+        font-weight: 800;
+        font-size: 14px;
+        color: #01A66B;
+        line-height: 110%;
+        text-decoration: none;
+    }
     .header__navs a{
         display: none;
     }
@@ -181,7 +225,7 @@ header{
 
 @media screen and (max-width: 350px) {
    .preHeader__orderLink{
-    font-size: 10px;
+    font-size: 9px;
    }
 }
 
@@ -539,6 +583,12 @@ header{
         display: none;
     }
 }
+@media screen and (max-width: 350px) {
+    .hero__btn__advantages, .hero__btn__review{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 /* HERO */
 
 
@@ -696,6 +746,10 @@ header{
     background: #F0FDF8;
 }
 
+.level{
+    background: linear-gradient(0deg, #F8F8F8, #F8F8F8), #F0FDF8 !important;
+}
+
 .level__block {
     padding: 7.29vw 11.46vw 7.29vw 12.06vw;
     display: flex;
@@ -741,6 +795,7 @@ header{
         padding: 7.29vw 9.46vw 7.29vw 9.46vw;
     }    
 }
+
 
 /* LEVEL */
 
@@ -999,4 +1054,46 @@ header{
         height: 34px;
     }
 }
+@media screen and (max-width:480px) {
+    .cookie__cont{
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cookies__text{
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 150%;
+        color: #212121;
+        font-family: var(--inter);
+    }
+    .cookie__btn{
+        background: #01A66B;
+        border-radius: 4px;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 8px;
+        font-family: var(--inter);
+        border: none;
+        height: 34px;
+    }
+}
 /* COOKIE */
+
+/* POLITICS */
+.politics{
+    margin-top: 140px;
+}
+
+.footer__links{
+    font-family: var(--inter);
+    font-weight: 300;
+    color: #999999;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footer__links:hover{
+    color: #999999;
+    text-decoration: none;
+}
