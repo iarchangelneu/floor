@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставьте отзыв</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/vstyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <section class="preHeader">
+        <div class="container-fluid cont__pd">
+            <div class="preHeader__container d-flex flex justify-content-end align-items-center">
+                <a href="" class="preHeader__orderLink">
+                    <img src="../img/header-cart.svg" alt="header-cart">
+                    Заказать в фирменном интернет-магазине
+                </a>
+                <button class="preHeader__close" onclick="closePreHeader()">
+                    <img src="../img/header-close.svg" alt="close">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <header id="header">
+        <div class="container-fluid header__container cont__pd">
+            <div class="header__logo">
+                <a href="../index.html">
+                ХВОЙНАЯ<br>
+                ПОДЛОЖКА   
+                </a>
+            </div>
+            <div class="header__navs">
+                <a href="https://khvoya.ru/#advantages">ПРЕИМУЩЕСТВА</a>
+                <a href="https://khvoya.ru/#characteristics">ХАРАКТЕРИСТИКИ</a>  
+                <a href="https://khvoya.ru/#reviews">ОТЗЫВЫ</a>  
+                <a href="https://khvoya.ru/#video">ВИДЕО</a>  
+                <button class="header__btn">
+                    Оставить отзыв    
+                </button>   
+                <a class="header__phoneLink" href="tel:+74953801062">
+                    <img src="../img/header-phone.svg" alt="">
+                    +7 (495) 380-10-62
+                </a>
+                <img src="../img/header-bureger-img.svg" alt="" class="header__img" onclick="openHeader()">
+            </div>    
+        </div>    
+    </header>
+
+    <div class="headerMobile" id="headerMobile">
+        <div class="headerM_container">
+            <div class="headerM__top">
+                <div class="header__logo">
+                    ХВОЙНАЯ<br>
+                    ПОДЛОЖКА   
+                </div>
+                <button class="btn__close" onclick="closeHeader()"><img
+                        src="../img/headerMClose.svg"></button>
+            </div>
+            <div class="headerM__navs">
+                <div class="nav__links">
+                    <a href="#advantages" class="menu-item nav__link" onclick="closeHeader()"><span>Преимущества</span></a>
+                    <a href="#characteristics" class="menu-item nav__link" onclick="closeHeader()"><span>Характеристики</span></a>
+                    <a href="#reviews" class="menu-item nav__link" onclick="closeHeader()"><span>Отзывы</span></a>
+                    <a href="#video" class="menu-item nav__link" onclick="closeHeader()"><span>Видео</span></a>
+                </div>    
+                <a class="header__phoneLink headerM__phone" href="tel:+74953801062">
+                    <img src="../img/header-phone.svg" alt="">
+                    +7 (495) 380-10-62
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="cookies" id="cookie">
+        <div class="container-fluid">
+            <div class="cookie__cont">
+                <div class="cookies__text">
+                    Мы используем cookies для улучшения работы сайта, анализа трафика и персонализации.<br>
+                    Используя сайт или кликая на кнопку Я согласен (согласна), вы соглашаетесь с нашей политикой использования cookies.<br> 
+                    Политику использования cookies вы можете прочитать <a class="cookie__link" href="./cookie/">здесь.</a> 
+                </div>
+                <button class="cookie__btn" onclick="hideCookie()">
+                    Я согласен / согласна
+                </button>
+            </div>        
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script data-b24-form="inline/56/yj3d9d" data-skip-moving="true">
+        (function(w,d,u){
+        var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b13917222/crm/form/loader_56.js');
+        </script>
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+      <!-- <script src="../js/slider.js"></script> -->
+      <!-- <script type="text/javascript" src="./js/slick/slick.min.js"></script>   -->
+      <script src="../js/header.js"></script>
+      <!-- <script src="./js/chars.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        
+      
+        <style>
+            .b24-form {
+    margin-top: 110px;
+}
+            .b24-form-wrapper.b24-form-border-bottom {
+    border-bottom: 0px solid var(--b24-primary-color);
+}
+        </style>
+</body>
+</html>

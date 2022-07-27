@@ -1,22 +1,22 @@
 // HEADER ON SCROLL
-document.addEventListener("DOMContentLoaded", function(event) {
-    window.addEventListener("scroll", onScrollheader)
-    onScrollheader()
+document.addEventListener("DOMContentLoaded", function (event) {
+  window.addEventListener("scroll", onScrollheader)
+  onScrollheader()
 });
 
 function onScrollheader() {
-    let hd = document.getElementById("header")
-    let h = window.pageYOffset
+  let hd = document.getElementById("header")
+  let h = window.pageYOffset
 
-    if (h > 5) {
-        hd.style.backgroundColor = "#FFFFFF"
-        hd.classList.add("navShadow")
-    } else {
-        if(window.innerWidth>480){
-          hd.style.backgroundColor = "rgba(0,0,0,0)"
-        }
-        hd.classList.remove("navShadow")
+  if (h > 5) {
+    hd.style.backgroundColor = "#FFFFFF"
+    hd.classList.add("navShadow")
+  } else {
+    if (window.innerWidth > 480) {
+      hd.style.backgroundColor = "rgba(0,0,0,0)"
     }
+    hd.classList.remove("navShadow")
+  }
 }
 // HEADER ON SCROLL
 
@@ -46,9 +46,9 @@ const anchors = document.querySelectorAll('.scroll-to')
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
-    
+
     const blockID = anchor.getAttribute('href')
-    
+
     document.querySelector(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
@@ -57,11 +57,19 @@ for (let anchor of anchors) {
 }
 //ANKOR
 
-function hideCookie(){
+function hideCookie() {
   document.getElementById('cookie').style.display = 'none'
+  localStorage.setItem('cookieAcc', true)
 }
 
-function closePreHeader(){
+function closePreHeader() {
   document.querySelector('.preHeader').style.display = 'none'
   document.querySelector('#header').style.top = '0px'
+}
+
+window.onload = function () {
+  let cock = document.getElementById('cookie')
+  if (!localStorage.getItem('cookieAcc')) {
+    cock.classList.add('cookiesD')
+  }
 }
